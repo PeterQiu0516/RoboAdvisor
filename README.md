@@ -7,4 +7,4 @@ I first obtained the historical NAV data for 790 selected funds from Bloomberg b
 
 Then I designed a questionaire for investigating the customers' specific needs (like risks and return rates requirements).
 
-And then I designed the specific funding recommendation system to satisfy each customer's specific needs based on Python and R. I utilized the famous Markowitz and Black-litterman model in the main body of the project.
+And then I designed the specific funding recommendation system to satisfy each customer's specific needs based on Python and R. I utilized the famous Markowitz and Black-Litterman model in the main body of the project.
