@@ -1,0 +1,9 @@
+fund_num_tmp = ceiling(fund_num/10)
+fund_num_upper = fund_num_tmp * ins
+
+if(ins == 10) 
+{
+    fund_num_upper = fund_num
+}
+
+selected<-sorted_risk_all[fund_num_tmp*(ins-1)+1:fund_num_upper]
