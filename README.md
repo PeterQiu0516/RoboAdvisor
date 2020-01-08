@@ -1,5 +1,5 @@
-# Funding-Recommendation
-A funding recommendation project based on Markowitz and Black-Litterman model.
+# RoboAdvisor
+A funding recommendation system based on Markowitz and Black-Litterman model implemented on the App "Navigator".
 
 This is my first practical project during my internship at Asset Pro in Beijing. And the project will also be implemented in the "Navigator" financial APP that the company is developing currently.
 
