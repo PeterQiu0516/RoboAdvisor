@@ -100,7 +100,7 @@ data_all[5,5] = weighted_avg(within_5,weight)#this year
 ###---Step 7: Moving Volatility
 moving_std = np.zeros(date-1)
 for i in range(0,date-1):
-    moving_std[i] = np.std(data_all[9,:(i+2)])
+    moving_std[i] = np.std(data_all[9,:(i+2)]) * np.sqrt(252)
 data_all[7,:-1] = moving_std
 print(data_all[7,:-1])
 
