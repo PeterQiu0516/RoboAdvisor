@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="/static/js/echarts.min.js"></script>
+</head>
+
+<!--Graph1-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main1" style="width: 1500px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart1 = echarts.init(document.getElementById('main1'));
+        // 指定图表的配置项和数据
+        var option1 = {{result | safe}};
+        console.log(option1)
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option1.a);
+    </script>
+</body>
+<br /><br />
+
+
+<!--Table1-->
+<style type="text/css">
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+</style>
+<table class="gridtable" border="1"  cellpadding="10" align="center">
+    <caption >期末持仓</caption>
+<tr>
+    <th align="center">组合名称</th><td align="center">我的组合</td>
+</tr>
+<tr>
+    <th align="center">组合开始日期</th><td align="center">{{result.date_begin}}</td>
+</tr>
+<tr>
+    <th align="center">最近净值日期</th><td align="center">{{result.date_now}}</td>
+</tr>
+    <tr>
+    <th align="center">资金规模</th><td align="center">1000万元</td>
+</tr>
+    <tr>
+    <th align="center">期末市值</th><td align="center">{{result.j[0]}}万元</td>
+</tr>
+</table>
+<br /><br />
+
+
+<!--Graph2-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main2" style="width: 1400px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart2 = echarts.init(document.getElementById('main2'));
+
+        // 指定图表的配置项和数据
+        var option2 = {{result | safe}};
+        console.log(option2)
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option2.b);
+
+    </script>
+</body>
+<br /><br />
+
+<!--Table2-->
+<style type="text/css">
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+</style>
+<table class="gridtable" border="1"  cellpadding="10" align="center">
+    <caption >业绩评价</caption>
+<tr>
+  <th></th>
+  <th align="center">我的组合</th>
+  <th align="center">基准1(沪深300)</th>
+    <th align="center">基准2(标普500)</th>
+</tr>
+<tr>
+  <td align="center">年化收益</td>
+  <td align="center" >{{result.i[0]}}0%</td>
+  <td align="center">{{result.i[5]}}%</td>
+     <td align="center">{{result.i[10]}}%</td>
+</tr>
+    <tr>
+  <td align="center">夏普比率</td>
+  <td align="center">{{result.i[1]}}</td>
+  <td align="center">{{result.i[6]}}</td>
+         <td align="center">{{result.i[11]}}</td>
+</tr>
+    <tr>
+  <td align="center">年化波动率</td>
+  <td align="center">{{result.i[2]}}%</td>
+  <td align="center">{{result.i[7]}}%</td>
+         <td align="center">{{result.i[12]}}%</td>
+</tr>
+<!--        <tr>-->
+<!--  <td align="center">最大回撤</td>-->
+<!--  <td align="center">{{result.i[3]}}%</td>-->
+<!--  <td align="center">{{result.i[8]}}%</td>-->
+<!--             <td align="center">{{result.i[13]}}%</td>-->
+<!--</tr>-->
+        <tr>
+  <td align="center">95%VaR</td>
+  <td align="center">{{result.i[4]}}%</td>
+  <td align="center">{{result.i[9]}}%</td>
+             <td align="center">{{result.i[14]}}%</td>
+</tr>
+</table>
+<br /><br />
+
+
+<!--Graph3-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main3" style="width: 1400px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart3 = echarts.init(document.getElementById('main3'));
+        // 指定图表的配置项和数据
+        var option3 = {{result | safe}};
+        console.log(option3)
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart3.setOption(option3.c);
+    </script>
+</body>
+<br /><br />
+
+
+<!--Table3-->
+<style type="text/css">
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+</style>
+<table class="gridtable" border="1"  cellpadding="10" align="center">
+    <caption >收益概率</caption>
+<tr>
+  <th></th>
+  <th align="center">我的组合</th>
+  <th align="center">基准1(沪深300)</th>
+    <th align="center">基准2(标普500)</th>
+</tr>
+<tr>
+  <td align="center">最近一周</td>
+  <td align="center" >{{result.h[0]}}%</td>
+  <td align="center">{{result.h[5]}}%</td>
+     <td align="center">{{result.h[10]}}%</td>
+</tr>
+    <tr>
+  <td align="center">最近一月</td>
+  <td align="center">{{result.h[1]}}%</td>
+  <td align="center">{{result.h[6]}}%</td>
+         <td align="center">{{result.h[11]}}%</td>
+</tr>
+    <tr>
+  <td align="center">最近三月</td>
+  <td align="center">{{result.h[2]}}%</td>
+  <td align="center">{{result.h[7]}}%</td>
+         <td align="center">{{result.h[12]}}%</td>
+</tr>
+        <tr>
+  <td align="center">最近半年</td>
+  <td align="center">{{result.h[3]}}%</td>
+  <td align="center">{{result.h[8]}}%</td>
+             <td align="center">{{result.h[13]}}%</td>
+</tr>
+        <tr>
+  <td align="center">最近一年</td>
+  <td align="center">{{result.h[4]}}%</td>
+  <td align="center">{{result.h[9]}}%</td>
+             <td align="center">{{result.h[14]}}%</td>
+</tr>
+</table>
+<br /><br />
+
+
+<!--Graph7-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main7" style="width: 1300px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart7 = echarts.init(document.getElementById('main7'));
+        // 指定图表的配置项和数据
+        var option7 = {{result | safe}};
+        console.log(option7)
+        // 使用刚指定的配置项和数据显示图表。
+        myChart7.setOption(option7.l);
+    </script>
+</body>
+<br /><br />
+
+<!--Table6-->
+<style type="text/css">
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+</style>
+<table class="gridtable" border="1"  cellpadding="10" align="center">
+    <caption >年度收益概率</caption>
+<tr>
+  <th></th>
+  <th align="center">我的组合</th>
+  <th align="center">基准1(沪深300)</th>
+    <th align="center">基准2(标普500)</th>
+</tr>
+<tr>
+  <td align="center">2014年</td>
+  <td align="center" >{{result.k[0]}}%</td>
+  <td align="center">{{result.k[6]}}%</td>
+     <td align="center">{{result.k[12]}}%</td>
+</tr>
+    <tr>
+  <td align="center">2015年</td>
+  <td align="center">{{result.k[1]}}%</td>
+  <td align="center">{{result.k[7]}}%</td>
+         <td align="center">{{result.k[13]}}%</td>
+</tr>
+    <tr>
+  <td align="center">2016年</td>
+  <td align="center">{{result.k[2]}}%</td>
+  <td align="center">{{result.k[8]}}%</td>
+         <td align="center">{{result.k[14]}}%</td>
+</tr>
+        <tr>
+  <td align="center">2017年</td>
+  <td align="center">{{result.k[3]}}%</td>
+  <td align="center">{{result.k[9]}}%</td>
+             <td align="center">{{result.k[15]}}%</td>
+</tr>
+        <tr>
+  <td align="center">2018年</td>
+  <td align="center">{{result.k[4]}}%</td>
+  <td align="center">{{result.k[10]}}%</td>
+             <td align="center">{{result.k[16]}}%</td>
+</tr>
+            <tr>
+  <td align="center">2019年</td>
+  <td align="center">{{result.k[5]}}%</td>
+  <td align="center">{{result.k[11]}}%</td>
+             <td align="center">{{result.k[17]}}%</td>
+</tr>
+</table>
+<br /><br />
+
+
+
+<!--Graph4-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main4" style="width: 1300px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart4 = echarts.init(document.getElementById('main4'));
+        // 指定图表的配置项和数据
+        var option4 = {{result | safe}};
+        console.log(option4)
+        // 使用刚指定的配置项和数据显示图表。
+        myChart4.setOption(option4.d);
+    </script>
+</body>
+<br /><br />
+
+
+<!--Table4-->
+<style type="text/css">
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+</style>
+<table class="gridtable" border="1"  cellpadding="10" align="center">
+    <caption >业绩评价</caption>
+<tr>
+  <th></th>
+  <th align="center">我的组合</th>
+  <th align="center">基准1(沪深300)</th>
+    <th align="center">基准2(标普500)</th>
+</tr>
+<tr>
+  <td align="center">夏普比率</td>
+  <td align="center" >{{result.g[0]}}</td>
+  <td align="center">{{result.g[4]}}</td>
+     <td align="center">{{result.g[8]}}</td>
+</tr>
+    <tr>
+  <td align="center">索提诺比率</td>
+  <td align="center">{{result.g[1]}}</td>
+  <td align="center">{{result.g[5]}}</td>
+         <td align="center">{{result.g[9]}}</td>
+</tr>
+    <tr>
+  <td align="center">斯图泽比率</td>
+  <td align="center">{{result.g[2]}}</td>
+  <td align="center">{{result.g[6]}}</td>
+         <td align="center">{{result.g[10]}}</td>
+</tr>
+        <tr>
+  <td align="center">卡玛比率</td>
+  <td align="center">{{result.g[3]}}</td>
+  <td align="center">{{result.g[7]}}</td>
+             <td align="center">{{result.g[11]}}</td>
+</tr>
+</table>
+<br /><br />
+
+
+
+<!--Graph5-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main5" style="width: 1300px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart5 = echarts.init(document.getElementById('main5'));
+        // 指定图表的配置项和数据
+        var option5 = {{result | safe}};
+        console.log(option5)
+        // 使用刚指定的配置项和数据显示图表。
+        myChart5.setOption(option5.e);
+    </script>
+</body>
+<br /><br />
+
+
+<!--Graph6-->
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main6" style="width: 1300px;height:400px;">{{result}}</div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart6 = echarts.init(document.getElementById('main6'));
+        // 指定图表的配置项和数据
+        var option6 = {{result | safe}};
+        console.log(option6)
+        // 使用刚指定的配置项和数据显示图表。
+        myChart6.setOption(option6.f);
+    </script>
+</body>
+<br /><br />
+
+
+
+
+
+
+</html>
