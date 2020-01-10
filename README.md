@@ -3,12 +3,16 @@ A portfolio selection recommendation system based on Markowitz Mean-Variance Mod
 
 This is my first practical project during my internship at Asset Pro in Beijing. And the project is already implemented on the "Navigator" financial APP with thousands of users.
 
-##Programming Languages
+---
+
+## Programming Languages
 
 + Python: For online data crawling(selenium), project integrating(rpy2) and data processing(pandas).
 + R: For model implementation(PortfolioAnalytics), part of online data crawling(rvest) and .csv file processing.
 + Javascript: For plotting related intuitive financial figures(ECharts) and online survey designing.
 + Html: For online survey designing.
+
+---
 
 ## Milestones
 
