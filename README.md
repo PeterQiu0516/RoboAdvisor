@@ -43,12 +43,12 @@ Download the whole repository through [this link](https://github.com/PeterQiu051
 
 ### Running
 ---
-Access the '01_15' directory and make sure that the three input files `bloomberg.csv`、`filter.csv` and `newfund.csv` are present in the '01_15' directory.
+Access the `01_15` directory and make sure that the three input files `bloomberg.csv`、`filter.csv` and `newfund.csv` are present in the `01_15` directory.
 
 Then run
 
 ```
-python final.py
+.\python final.py
 ```
 
 And access the following [survey page](localhost:9000) and finish all the questions on it.
@@ -72,6 +72,7 @@ I designed a questionaire to investigate the customers' specific investment pref
 
 
 ### Data Processing - Fund Filter and Classifier
+---
 
 ### Model Construction - Markowitz Mean-Variance Model and Black-litterman Model
 ---
@@ -81,8 +82,6 @@ Then I designed the specific funding recommendation system to satisfy each custo
 I utilized the famous Markowitz and Black-Litterman model in the main body of the project by `PyPortfolioOpt` package
 
 
-###
----
 ### Generate Portfolio Report - Diagram Plotting
 ---
 EChart
