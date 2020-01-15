@@ -4,10 +4,10 @@ This is my first practical project during my internship at Asset Pro in Beijing.
 
 ## Programming Languages
 
-+ Python 3: For model implementation () online data crawling(selenium), project integrating(rpy2) and data processing(pandas).
-+ R: For model implementation(PortfolioAnalytics) and online data crawling(rvest).
-+ Javascript: For plotting related intuitive financial figures(ECharts) and online survey designing.
-+ Html: For online survey designing.
++ **Python 3**: For model implementation () online data crawling `selenium`, project integrating `rpy2` and data processing `pandas`.
++ **R**: For model implementation `PortfolioAnalytics` and online data crawling `rvest`.
++ **Javascript**: For plotting related intuitive financial figures(ECharts) and online survey designing.
++ **Html*: For online survey designing.
 
 ## Building
 
