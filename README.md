@@ -42,7 +42,7 @@ Download the whole repository through [this link](https://github.com/PeterQiu051
 
 ### Running
 ---
-Access the `01_15` directory and make sure that the three input files `bloomberg.csv`、`filter.csv` and `newfund.csv` are present in the `01_15` directory.
+Access the `01_20` directory and make sure that the three input files `bloomberg.csv`、`filter.csv` and `newfund.csv` are present in the `01_20` directory.
 
 Then run
 
