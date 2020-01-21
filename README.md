@@ -93,6 +93,6 @@ Supported by `EChart`.
 ## Explore more
 + [Web Crawler](https://github.com/PeterQiu0516/WebCrawler)
 + [Official Documentation for StatsModels](http://www.statsmodels.org/stable/index.html)
-+ [Official Documentation for PyPortfolioOpt]((https://pyportfolioopt.readthedocs.io/en/latest/BlackLitterman.html))
++ [Official Documentation for PyPortfolioOpt](https://pyportfolioopt.readthedocs.io/en/latest/)
 + [More about Time Series and ARIMA model](https://github.com/PeterQiu0516/GoogleCloud-ML-for-Trading/tree/master/Course%201%20-%20Introduction%20to%20Trading%2C%20Machine%20Learning%20%26%20GCP/Qwiklab%203%20-%20Build%20a%20Time%20Series%20Model%20(ARIMA%20Model)%20to%20Forecast%20Stock%20Price)
 + [Echarts](https://echarts.apache.org/zh/index.html)
