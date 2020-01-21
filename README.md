@@ -73,6 +73,8 @@ I designed a questionaire to investigate the customers' specific investment pref
 ### Data Processing - Fund Filter and Classifier
 ---
 
+Supported by `Javascript` and Bloomberg.
+
 ### Model Construction - Markowitz Mean-Variance Model and Black-litterman Model
 ---
 
@@ -80,7 +82,9 @@ Then I designed the specific funding recommendation system to satisfy each custo
 
 I utilized the famous Markowitz and Black-Litterman model in the main body of the project by `PyPortfolioOpt` package
 
+We also use [Time Series Model ARIMA](https://github.com/PeterQiu0516/GoogleCloud-ML-for-Trading/tree/master/Course%201%20-%20Introduction%20to%20Trading%2C%20Machine%20Learning%20%26%20GCP/Qwiklab%203%20-%20Build%20a%20Time%20Series%20Model%20(ARIMA%20Model)%20to%20Forecast%20Stock%20Price) to make better estimates of the expected return for the portfolio.
+
 
 ### Generate Portfolio Report - Diagram Plotting
 ---
-EChart
+Supported by `EChart`.
