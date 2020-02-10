@@ -1,7 +1,7 @@
 # RoboAdvisor - A Portfolio Selection Recommendation System
 A portfolio selection recommendation system based on Markowitz Mean-Variance Model and Black-Litterman Model implemented on the App `Navigator`.
 
-This is my first practical project during my internship at Asset Pro in Beijing. And the project is already implemented on the `Navigator` financial APP with thousands of users.
+This is my first practical project during my internship as a data analyst at a leading fintech company in Beijing. And the project is already implemented on the `Navigator` financial APP with thousands of users.
 
 [Documentation File (Chinese Version)](https://github.com/PeterQiu0516/RoboAdvisor/blob/master/RoboAdvisor%20Documentation%20(Chinese%20Version).pdf)
 
