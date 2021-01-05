@@ -1,0 +1,51 @@
+<!doctype html>
+<title>Registration Form Sample</title>
+<h1>调查问卷</h1>
+
+{% from "_field.html" import render_field %}
+<form method="POST" action="{{ url_for('register') }}">
+  {{ form.hidden_tag() }}
+  <table>
+    {{ render_field(form.q1) }}
+    {{ render_field(form.q2) }}
+    {{ render_field(form.q3) }}
+    {{ render_field(form.q4) }}
+    {{ render_field(form.q5) }}
+    {{ render_field(form.q6) }}
+    {{ render_field(form.q7) }}
+    {{ render_field(form.q8) }}
+    {{ render_field(form.q9) }}
+    {{ render_field(form.q10) }}
+  </table>
+<div class="row">
+    <div class="col-sm-2 ">
+        <label>
+            <input name="s_option" value="basketball" type="checkbox"> 篮球
+        </label>
+    </div>
+    <div class="col-sm-2 ">
+        <label>
+        <input name="s_option" value="football" type="checkbox"> 足球
+        </label>
+    </div>
+    <div class="col-sm-2 ">
+        <label>
+            <input name="s_option" value="badminton"  type="checkbox"> 羽毛球
+        </label>
+    </div>
+</div>
+
+<form class="form-horizontal" method="post">
+  <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <input name="sex" value="M" type="radio"  checked="checked"> 男
+        </div>
+ <div class="col-sm-2 ">
+            <input name="sex" value="F" type="radio"> 女
+        </div>
+
+    </div>
+</form>
+
+  {{ form.submit }}
+</form>
